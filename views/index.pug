@@ -10,7 +10,7 @@ html
         li 
           | #{item.name}  
           form(action=`/delete/${item._id}` method="POST" style="display:inline;")
-            button(type="submit") Delete
+            button(type="submit") Delete  
     form(action="/add" method="POST")
       input(type="text" name="name" placeholder="Enter item" required)
       button(type="submit") Add Item
